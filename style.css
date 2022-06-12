@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 30px;
+
+    --dark-blue: #535a81;
+    --dark-red: #ad5827;
+}
+
+.header {
+    font-size: 4rem;
+    background-image: linear-gradient(to left, var(--dark-red), var(--dark-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.error {
+    display: none;
+    color: var(--dark-red);
+}
+
+input {
+    width: 200px;
+    height: 25px;
+}
+
+.temp-group {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.toggle {
+    align-self: flex-end;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+
+.location {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.lat, .lon {
+    margin-top: 0;
+    font-size: .8rem;
+}
+
+.info {
+    background-color: #ecf0fa;
+    color: #535a81;;
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#submit, .toggle, #search {
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+}
+
+#search, #submit {
+    margin-top: 10px;
+    align-self: center;
+}
+
+label {
+    font-size: 2rem;
+    color: #535a81;
+}
+
+#submit {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px; 
+    
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.city {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
