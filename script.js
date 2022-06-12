@@ -1,5 +1,5 @@
 
-let link = 'http://api.openweathermap.org/data/2.5/weather?q=London&APPID=3202286a5cb08832074c3f8e19e4f848&units=imperial';
+let link = 'https://api.openweathermap.org/data/2.5/weather?q=London&APPID=3202286a5cb08832074c3f8e19e4f848&units=imperial';
 const form = document.querySelector('#search');
 const button = document.querySelector('#submit');
 const celsiusFahr = document.querySelector('.toggle');
@@ -27,7 +27,7 @@ async function fetchWeather() {
         let location = form.value;
         location = location.charAt(0).toUpperCase() + location.slice(1)
         form.value = '';
-        link = `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=3202286a5cb08832074c3f8e19e4f848&units=imperial`;
+        link = `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=3202286a5cb08832074c3f8e19e4f848&units=imperial`;
 
         const response = await fetch(link, {mode: 'cors'});
         const data = await response.json();
